@@ -1,3 +1,9 @@
+# Now that we've gotten to the case listing page,
+# let's get a handle on all of the links to 
+# all of the different cases we will want to access.
+# Note: I haven't done any pagination, so we will be
+# working with only the first page of results.
+
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import Request, FormRequest
@@ -41,7 +47,7 @@ class Demo3(BaseSpider):
         links.extend(driver.find_elements_by_xpath("//td[@class='td2']/a"))
 
         print links
-        
+
         # for link in links:
 
         #     text = link.get_attribute("href")

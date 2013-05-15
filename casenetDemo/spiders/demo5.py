@@ -1,3 +1,7 @@
+# Create a FormRequest and send it post data from the
+# URLs we've scraped. Give it a callback to handle the
+# violation field we've added in the Item.
+
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import Request, FormRequest

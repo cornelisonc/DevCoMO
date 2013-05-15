@@ -1,3 +1,7 @@
+# Use Selenium to handle the search form, and again
+# use the title XPath to make sure we got to the 
+# right page.
+
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import Request, FormRequest

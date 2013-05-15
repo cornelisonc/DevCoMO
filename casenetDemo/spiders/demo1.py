@@ -1,3 +1,7 @@
+# Instantiate a simple BaseSpider, and access one page.
+# Use XPath to get title attribute of that page,
+# just to make sure we got to it correctly.
+
 from scrapy.spider import BaseSpider
 from scrapy.http import Request
 # from scrapy.selector import HtmlXPathSelector

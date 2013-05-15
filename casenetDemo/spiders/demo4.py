@@ -1,3 +1,8 @@
+# Introduce Scrapy Items. Create an item,
+# parse up the link we've scraped up, and then
+# populate the caseno and courtno fields of 
+# the item.
+
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import Request, FormRequest
